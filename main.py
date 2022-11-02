@@ -4,7 +4,7 @@ from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.common.by import By
 import time
 import tweepy
-PATH="C:/Users/khushali Pariyal/chromedriver.exe"
+PATH="chromedriver.exe"
 driver=webdriver.Chrome(PATH)
 
 
