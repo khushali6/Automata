@@ -50,11 +50,18 @@ def increase_day():
 
     return count
 
+
 count=increase_day()
+def task():
+  delete_completed=driver.find_element("xpath","//button[@name='deleteComplete']")
+  delete_completed.click()
 tweet_text="Day "+str(count)+" of 100\n"+final_string+" #100DaysofCode"
 client = tweepy.Client(consumer_key= API_KEY,consumer_secret= SECRET_API_KEY,access_token= ACCESS_TOKEN,access_token_secret= ACCESS_TOKEN_SECRET)
 response=client.create_tweet(text=tweet_text)
-print(response)
+task()
+
+
+
 
 
    
